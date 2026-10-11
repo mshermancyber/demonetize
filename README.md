@@ -1,6 +1,6 @@
-# Demonitize
+# Demonetize
 
-**Demonitize** detects and surgically removes advertising SDKs from application
+**Demonetize** detects and surgically removes advertising SDKs from application
 packages. You hand it an app file — an Android APK, an iOS IPA, a browser
 extension, a Windows Store package, a Linux bundle — and it runs the package
 through extraction, signature-based ad SDK scanning, AI-assisted analysis,
