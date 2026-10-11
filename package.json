@@ -1,0 +1,38 @@
+{
+  "name": "demonetize",
+  "version": "0.1.0",
+  "description": "Detects and surgically removes advertising SDKs from application packages (APK, IPA, AAB, CRX, MSIX, AppImage and more).",
+  "license": "GPL-3.0-or-later",
+  "author": "Mark Sherman",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshermancyber/demonetize.git"
+  },
+  "homepage": "https://github.com/mshermancyber/demonetize#readme",
+  "bugs": {
+    "url": "https://github.com/mshermancyber/demonetize/issues"
+  },
+  "keywords": [
+    "ad-removal",
+    "ad-sdk",
+    "apk",
+    "ipa",
+    "static-analysis",
+    "reverse-engineering"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:server && npm run install:frontend",
+    "build:server": "cd server && npx tsc",
+    "build:frontend": "cd frontend && npx ng build",
+    "build": "npm run build:server && npm run build:frontend",
+    "start:server": "cd server && node dist/index.js",
+    "start:frontend": "cd frontend && npx ng serve",
+    "dev:server": "cd server && npx ts-node src/index.ts"
+  }
+}
